@@ -5,7 +5,9 @@ CREATE TABLE shop_18 (
     price real,
     remote_url varchar(255),
     local_url varchar(255),
-    FOREIGN KEY (cat_id) REFERENCES category_18(id) ON DELETE SET NULL ON UPDATE CASCADE
+    FOREIGN KEY (cat_id) REFERENCES category_18(id) 
+    ON DELETE SET NULL 
+    ON UPDATE CASCADE
 );
 
 INSERT INTO shop_18(id, name, cat_id, price, remote_url, local_url)
