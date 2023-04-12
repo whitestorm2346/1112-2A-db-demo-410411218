@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "hats",
+        "size": null,
+        "local_url": "/img/homepage/hats.png",
+        "remote_url": "https://i.ibb.co/cvpntL1/hats.png",
+        "link_url": "/crown2_xx/shop_xx/hats"
+    },
+    {
+        "id": 2,
+        "name": "jackets",
+        "size": null,
+        "local_url": "/img/homepage/jackets.png",
+        "remote_url": "https://i.ibb.co/px2tCc3/jackets.png",
+        "link_url": "/crown2_xx/shop_xx/jackets"
+    },
+    {
+        "id": 3,
+        "name": "sneakers",
+        "size": null,
+        "local_url": "/img/homepage/sneakers.png",
+        "remote_url": "https://i.ibb.co/0jqHpnp/sneakers.png",
+        "link_url": "/crown2_xx/shop_xx/sneakers"
+    },
+    {
+        "id": 4,
+        "name": "womens",
+        "size": "large",
+        "local_url": "/img/homepage/womens.png",
+        "remote_url": "https://i.ibb.co/GCCdy8t/womens.png",
+        "link_url": "/crown2_xx/shop_xx/womens"
+    },
+    {
+        "id": 5,
+        "name": "mens",
+        "size": "large",
+        "local_url": "/img/homepage/mens.png",
+        "remote_url": "https://i.ibb.co/R70vBrQ/men.png",
+        "link_url": "/crown2_xx/shop_xx/mens"
+    }
+]
