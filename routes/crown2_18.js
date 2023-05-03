@@ -21,4 +21,30 @@ router.get('/', async function(req, res, next) {
     }       
 });
 
+router.get('/shop2_18/:category', async function(req, res, next){
+    console.log('category', req.params.category)
+
+    try {
+        let results = await db.query(`
+            SELECT C.name as category, S.id, S.name, price, S.local_url
+            from category2_18 as C, shop2_18 as S
+            WHERE S.cat_id = C.id 
+            AND C.name = $1
+        `, [req.params.category]);
+
+        console.log('results', JSON.stringify(results.rows));
+        res.json(results.rows);
+
+        // res.render('crown2_18/shop2_18', { 
+        //     data: results.rows,
+        //     category: req.params.category,
+        //     name: 'TseHsun Yu', 
+        //     ID: '410411218' 
+        // });
+    }
+    catch(error) {
+        console.log(error);
+    }
+});
+
 module.exports = router;
