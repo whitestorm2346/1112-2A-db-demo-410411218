@@ -6,7 +6,7 @@ let db = require('../utils/database');
 /* GET home page. */
 router.get('/', async function(req, res, next) {
     try {
-        let results = await db.query(`select * from category_18`);
+        let results = await db.query(`select * from category2_18`);
 
         console.log('category data', JSON.stringify(results.rows));
 
