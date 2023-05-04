@@ -8,7 +8,9 @@ let db = require('../utils/database');
 // READ
 router.get('/', async function(req, res, next) {
     try {
-        let results = await db.query(`select * from category2_18`);
+        let results = await db.query(`select * from category2_18 
+        order by category2_18.id
+        `);
 
         console.log('category data', JSON.stringify(results.rows));
 
