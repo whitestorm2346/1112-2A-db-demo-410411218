@@ -7,7 +7,7 @@ if(process.env.DATABASE === 'SUPABASE'){
         user: 'postgres',
         host: process.env.SUPABASE_HOST,
         port: '5432',
-        database: 'postgres',
+        database: 'postgres', // 跟 Postgres 裡的 Supabase server 的 database 有關
         password: process.env.PASSWORD,
     });
 
