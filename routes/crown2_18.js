@@ -28,7 +28,8 @@ router.get('/shop2_18', async function(req, res, next){
         let results = await db.query(`
             SELECT C.name as category, S.id, S.name, price, S.local_url
             from category2_18 as C, shop2_18 as S
-            WHERE S.cat_id = C.id 
+            WHERE S.cat_id = C.id
+            ORDER BY S.cat_id
         `);
 
         console.log('results', JSON.stringify(results.rows));
@@ -36,6 +37,7 @@ router.get('/shop2_18', async function(req, res, next){
 
         res.render('crown2_18/shop2_18', { 
             data: results.rows,
+            category: 'All Products',
             name: 'TseHsun Yu', 
             ID: '410411218' 
         });
